@@ -315,8 +315,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 30
-    m_UpperAngle: 150
+    m_LowerAngle: -20
+    m_UpperAngle: 40
 --- !u!114 &724538603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -487,8 +487,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 30
-    m_UpperAngle: 90
+    m_LowerAngle: -20
+    m_UpperAngle: 40
 --- !u!1 &2369329536388865198 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1104907300766038763, guid: 6637dee5a35a10648a88c92af84bfce7, type: 3}
@@ -566,8 +566,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 40
-    m_UpperAngle: 60
+    m_LowerAngle: -10
+    m_UpperAngle: 10
 --- !u!1 &3148962427962038549 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 290406696446279504, guid: 6637dee5a35a10648a88c92af84bfce7, type: 3}
@@ -724,8 +724,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 40
-    m_UpperAngle: 60
+    m_LowerAngle: -10
+    m_UpperAngle: 10
 --- !u!1 &4367349587533647132 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7841023474728572071, guid: 6637dee5a35a10648a88c92af84bfce7, type: 3}
@@ -803,8 +803,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 30
-    m_UpperAngle: 150
+    m_LowerAngle: -20
+    m_UpperAngle: 40
 --- !u!114 &70540691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1053,6 +1053,20 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: -30
     m_UpperAngle: 30
+--- !u!114 &613525913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6905724559072833019}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c54dcf4d0d4f7c9d8a322cf6783b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetRotation: 0
+  _force: 300
 --- !u!1 &7127987325773100590 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5575268648539951211, guid: 6637dee5a35a10648a88c92af84bfce7, type: 3}
@@ -1130,8 +1144,8 @@ HingeJoint2D:
     m_MaximumMotorForce: 10000
   m_UseLimits: 1
   m_AngleLimits:
-    m_LowerAngle: 30
-    m_UpperAngle: 90
+    m_LowerAngle: -20
+    m_UpperAngle: 40
 --- !u!1 &7692012056921330826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4975179927419155151, guid: 6637dee5a35a10648a88c92af84bfce7, type: 3}
@@ -1290,7 +1304,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetRotation: 0
-  _force: 500
+  _force: 300
+--- !u!114 &192307297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8270787785205220343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c54dcf4d0d4f7c9d8a322cf6783b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetRotation: 0
+  _force: 0
 --- !u!1 &8998838119848109873 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -3218195314936397452, guid: 6637dee5a35a10648a88c92af84bfce7, type: 3}
@@ -1367,3 +1395,17 @@ HingeJoint2D:
   m_AngleLimits:
     m_LowerAngle: 0
     m_UpperAngle: 30
+--- !u!114 &2034620455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8998838119848109873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c54dcf4d0d4f7c9d8a322cf6783b1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetRotation: 0
+  _force: 300
