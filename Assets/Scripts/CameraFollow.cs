@@ -18,12 +18,15 @@ namespace Game
 
 		void LateUpdate()
 		{
-			if ( Vector2.Distance( _cameraTransform.position, _target.position ) < float.Epsilon )
+			Vector3 cameraPos	= _cameraTransform.position;
+			Vector3 targetPos	= _target.position;
+			
+			if ( Vector2.Distance( cameraPos, targetPos ) < float.Epsilon )
 				return;
 
-			Vector3 targetPos	= Vector3.Lerp( _cameraTransform.position, _target.position, _speed * Time.deltaTime ).WithZ( -10 );
+			Vector3 newPos		= Vector3.Lerp( cameraPos, targetPos, _speed * Time.deltaTime ).WithZ( cameraPos.z );
 			
-			_cameraTransform.position = targetPos;
+			_cameraTransform.position = newPos;
 		}
 	}
 }
