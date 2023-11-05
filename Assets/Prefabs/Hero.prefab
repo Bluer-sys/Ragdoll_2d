@@ -332,8 +332,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2173466986326764122}
+  - component: {fileID: 1274194390361323356}
   - component: {fileID: 1274194390361323354}
   - component: {fileID: 1274194390361323355}
+  - component: {fileID: 2996991083643897558}
   m_Layer: 6
   m_Name: Hero
   m_TagString: Untagged
@@ -357,6 +359,26 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1274194390361323356
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072328821493002809}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d0f29a88f0d508643a9e3159d9df6ad8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1274194390361323354
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -387,6 +409,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _rb: {fileID: 2788437631531324831}
+  _input: {fileID: 0}
+--- !u!114 &2996991083643897558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072328821493002809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df80f004ec4045e599d14dc64ff489b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _input: {fileID: 0}
 --- !u!1 &1885165526877190365
 GameObject:
