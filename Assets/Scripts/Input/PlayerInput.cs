@@ -60,6 +60,15 @@ namespace Game.Input
 		void Update()
 		{
 			AimDirection = _aimJoystick.Value;
+			
+#if UNITY_EDITOR
+			
+			if ( Input.GetKeyDown( KeyCode.Space ) )
+				OnJump.Invoke();
+			
+			
+			SetMoveAxis( Mathf.Clamp(MoveAxis + Input.GetAxis( "Horizontal" ), -1, 1 ) ); 
+#endif
 		}
 
 		
