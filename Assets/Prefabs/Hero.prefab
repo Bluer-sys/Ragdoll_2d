@@ -422,6 +422,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df80f004ec4045e599d14dc64ff489b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animSpeed: 2
   _input: {fileID: 0}
 --- !u!1 &1885165526877190365
 GameObject:
@@ -598,7 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c54dcf4d0d4f7c9d8a322cf6783b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetRotation: 0
+  _targetRotation: -120
   _force: 300
 --- !u!1 &1932199505882966802
 GameObject:
@@ -1275,7 +1276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6c54dcf4d0d4f7c9d8a322cf6783b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _targetRotation: 0
+  _targetRotation: 120
   _force: 300
 --- !u!1 &4155596142484554202
 GameObject:

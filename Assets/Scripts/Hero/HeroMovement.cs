@@ -15,8 +15,6 @@ namespace Game.Hero
 		void Update()
 		{
 			_rb.velocity = new Vector2( _input.MoveAxis * _speed, _rb.velocity.y );
-
-			Debug.Log( _input.MoveAxis );
 		}
 	}
 }
