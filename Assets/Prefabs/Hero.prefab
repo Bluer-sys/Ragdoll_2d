@@ -372,6 +372,7 @@ MonoBehaviour:
   _jumpForce: 100
   _jumpDelay: 3
   _rb: {fileID: 2788437631531324831}
+  _input: {fileID: 0}
 --- !u!114 &1274194390361323355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _speed: 5
   _rb: {fileID: 2788437631531324831}
+  _input: {fileID: 0}
 --- !u!1 &1885165526877190365
 GameObject:
   m_ObjectHideFlags: 0
