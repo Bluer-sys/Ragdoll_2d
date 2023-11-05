@@ -2,7 +2,7 @@ namespace Game.Gun
 {
 	using UnityEngine;
 
-	public class GunShooting : MonoBehaviour
+	public sealed class GunShooting : MonoBehaviour
 	{
 		
 	}
