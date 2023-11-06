@@ -34,5 +34,7 @@ namespace Game
 				0 
 			);
 		}
+
+		public Vector2 GetPosition()	=> _camera.ScreenToWorldPoint( _transform.position );
 	}
 }
