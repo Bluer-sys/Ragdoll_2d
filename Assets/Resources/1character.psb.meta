@@ -117,8 +117,8 @@ ScriptedImporter:
     spritePosition: {x: 260, y: 1266}
   - name: arm_l_03
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.36160815, y: 0.80075926}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -139,8 +139,8 @@ ScriptedImporter:
     spritePosition: {x: 568, y: 521}
   - name: arm_l_02
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.16670123, y: 0.94265157}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -161,8 +161,8 @@ ScriptedImporter:
     spritePosition: {x: 446, y: 606}
   - name: arm_l_01
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.18058863, y: 0.9399239}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -183,8 +183,8 @@ ScriptedImporter:
     spritePosition: {x: 315, y: 914}
   - name: leg_r_03
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.44942835, y: 0.7632408}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -205,8 +205,8 @@ ScriptedImporter:
     spritePosition: {x: 522, y: 23}
   - name: leg_r_02
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.2145263, y: 0.9467127}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -227,13 +227,13 @@ ScriptedImporter:
     spritePosition: {x: 419, y: 94}
   - name: leg_r_01
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.18777339, y: 0.9559751}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 417
-      y: 348
+      x: 416
+      y: 347
       width: 168
       height: 336
     spriteID: 8626f897797abff40a3c2911475a4e85
@@ -249,8 +249,8 @@ ScriptedImporter:
     spritePosition: {x: 318, y: 410}
   - name: leg_r_03
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5848188, y: 0.74658495}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -271,8 +271,8 @@ ScriptedImporter:
     spritePosition: {x: 19, y: 18}
   - name: leg_r_02
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.84160376, y: 0.95219386}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -293,8 +293,8 @@ ScriptedImporter:
     spritePosition: {x: 50, y: 118}
   - name: leg_r_01
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.84160376, y: 0.94808304}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -315,8 +315,8 @@ ScriptedImporter:
     spritePosition: {x: 193, y: 418}
   - name: body_02
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 1}
+    alignment: 2
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -337,8 +337,8 @@ ScriptedImporter:
     spritePosition: {x: 294, y: 740}
   - name: body_01
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.5, y: 1}
+    alignment: 2
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -359,8 +359,8 @@ ScriptedImporter:
     spritePosition: {x: 294, y: 1004}
   - name: arm_r_03
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.6189934, y: 0.8398344}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -381,8 +381,8 @@ ScriptedImporter:
     spritePosition: {x: 21, y: 520}
   - name: arm_r_02
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.8210748, y: 0.95077366}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
@@ -403,8 +403,8 @@ ScriptedImporter:
     spritePosition: {x: 64, y: 605}
   - name: arm_r_01
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
+    pivot: {x: 0.81409484, y: 0.9467126}
+    alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
