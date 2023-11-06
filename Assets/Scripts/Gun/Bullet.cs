@@ -12,6 +12,8 @@ namespace Game.Gun
 		void Start()
 		{
 			_rb = GetComponent<Rigidbody2D>();
+			
+			Destroy( gameObject, 3f );
 		}
 
 		void FixedUpdate()
