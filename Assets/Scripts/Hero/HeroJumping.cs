@@ -1,6 +1,5 @@
 namespace Game.Hero
 {
-	using System;
 	using Game.Input;
 	using UnityEngine;
 
@@ -12,18 +11,17 @@ namespace Game.Hero
 		
 		[Header("Refs")]
 		[SerializeField] Rigidbody2D	_rb;
-		[SerializeField] PlayerInput	_input;
 
 		float _jumpTimer;
 
 		void OnEnable()
 		{
-			_input.OnJump.AddListener( TryJump );
+			PlayerInput.Instance.OnJump.AddListener( TryJump );
 		}
 
 		void OnDisable()
 		{
-			_input.OnJump.RemoveListener( TryJump );
+			PlayerInput.Instance.OnJump.RemoveListener( TryJump );
 		}
 
 		void Update()

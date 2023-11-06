@@ -9,13 +9,12 @@ namespace Game.Hero
 		[SerializeField] float			_gunRotationOffset;
 		[SerializeField] Transform		_rightArm;
 		[SerializeField] Transform		_leftArm;
-		[SerializeField] PlayerInput	_input;
 
 		Gun _current;
 		
 		
-		void OnEnable()		=> _input.OnGrab.AddListener( OnGrab );
-		void OnDisable()	=> _input.OnGrab.RemoveListener( OnGrab );
+		void OnEnable()		=> PlayerInput.Instance.OnGrab.AddListener( OnGrab );
+		void OnDisable()	=> PlayerInput.Instance.OnGrab.RemoveListener( OnGrab );
 
 
 		public void Shoot()		=> _current.Shoot();

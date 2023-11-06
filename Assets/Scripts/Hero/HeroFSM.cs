@@ -17,10 +17,7 @@ namespace Game.Hero
 	{
 		[Header( "Settings" )] 
 		[SerializeField] float	_shootInterval;
-		
-		[Header("Refs")]
-		[SerializeField] PlayerInput	_input;
-		
+
 		HeroGun		_heroGun;
 		
 		float		_shotTimer;
@@ -38,14 +35,14 @@ namespace Game.Hero
 		
 		void OnEnable()
 		{
-			_input.OnAim.AddListener( OnAim );
-			_input.OnGrab.AddListener( OnGrab );
+			PlayerInput.Instance.OnAim.AddListener( OnAim );
+			PlayerInput.Instance.OnGrab.AddListener( OnGrab );
 		}
 
 		void OnDisable()
 		{
-			_input.OnAim.RemoveListener( OnAim );
-			_input.OnGrab.RemoveListener( OnGrab );
+			PlayerInput.Instance.OnAim.RemoveListener( OnAim );
+			PlayerInput.Instance.OnGrab.RemoveListener( OnGrab );
 		}
 		
 

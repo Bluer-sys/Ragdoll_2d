@@ -10,11 +10,10 @@ namespace Game.Hero
 		
 		[Header( "Refs" )] 
 		[SerializeField] Rigidbody2D _rb;
-		[SerializeField] PlayerInput _input;
 
 		void Update()
 		{
-			_rb.velocity = new Vector2( _input.MoveAxis * _speed, _rb.velocity.y );
+			_rb.velocity = new Vector2( PlayerInput.Instance.MoveAxis * _speed, _rb.velocity.y );
 		}
 	}
 }

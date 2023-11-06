@@ -17,17 +17,25 @@ namespace Game.Input
 
 		[SerializeField] Joystick _aimJoystick;
 
+		static PlayerInput _instance;
+		
 #region Property
+
+		public static PlayerInput Instance	=> _instance ??= FindObjectOfType<PlayerInput>();
 
 		public float MoveAxis		{ get; private set; }
 		public Vector2 AimDirection	{ get; private set; }
 
 		public UnityEvent OnJump	{ get; } = new();
-		
 		public UnityEvent OnAim		{ get; } = new();
 		public UnityEvent OnGrab	{ get; } = new();
 
 #endregion
+
+		void Awake()
+		{
+			DontDestroyOnLoad( Instance );
+		}
 
 		void OnEnable()
 		{
@@ -66,8 +74,11 @@ namespace Game.Input
 			if ( Input.GetKeyDown( KeyCode.Space ) )
 				OnJump.Invoke();
 			
-			
-			SetMoveAxis( Mathf.Clamp(MoveAxis + Input.GetAxis( "Horizontal" ), -1, 1 ) ); 
+			if( Input.GetKey( KeyCode.A ) || Input.GetKey( KeyCode.D ) )
+				MoveAxis = Input.GetAxis( "Horizontal" );
+
+			if ( Input.GetKeyUp( KeyCode.A ) || Input.GetKeyUp( KeyCode.D ) )
+				MoveAxis = 0;
 #endif
 		}
 

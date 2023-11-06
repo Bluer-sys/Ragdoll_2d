@@ -11,9 +11,6 @@ namespace Game.Hero
 
 		[Header( "Settings" )] 
 		[SerializeField] float _animSpeed;
-		
-		[Header("Refs")]
-		[SerializeField] PlayerInput _input;
 			
 		Animator _animator;
 
@@ -26,7 +23,7 @@ namespace Game.Hero
 
 		void Update()
 		{
-			_animator.SetBool( IsMoving, _input.MoveAxis != 0 );
+			_animator.SetBool( IsMoving, PlayerInput.Instance.MoveAxis != 0 );
 		}
 	}
 }
