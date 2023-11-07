@@ -1,6 +1,7 @@
 namespace Game.Hero
 {
 	using System;
+	using System.Collections.Generic;
 	using Game.Input;
 	using UnityEngine;
 
@@ -12,13 +13,14 @@ namespace Game.Hero
 		Aiming
 	}
 	
-	[RequireComponent(typeof(HeroGun))]
 	public sealed class HeroFSM : MonoBehaviour
 	{
 		[Header( "Settings" )] 
 		[SerializeField] float	_shootInterval;
 
-		HeroGun		_heroGun;
+		[Header("Refs")]
+		[SerializeField] HeroGun			_heroGun;
+		[SerializeField] List<HeroLimbIK>	_handsIk;
 		
 		float		_shotTimer;
 		
@@ -72,10 +74,12 @@ namespace Game.Hero
 			switch (Current)
 			{
 				case EHeroState.Default:
+					ForAllHands( h => h.SetEnabled( false ) );
 					break;
 				
 				case EHeroState.Aiming:
 					ResetShootTimer();
+					ForAllHands( h => h.SetEnabled( true ) );
 					break;
 			}
 		}
@@ -111,6 +115,8 @@ namespace Game.Hero
 			OnEnter();
 		}
 
-		void ResetShootTimer()	=> _shotTimer = _shootInterval;
+		void ForAllHands(Action<HeroLimbIK> action)		=> _handsIk.ForEach( action );
+
+		void ResetShootTimer()							=> _shotTimer = _shootInterval;
 	}
 }

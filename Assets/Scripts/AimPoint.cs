@@ -1,5 +1,6 @@
 namespace Game
 {
+	using Game.Extensions;
 	using Game.Input;
 	using UnityEngine;
 
@@ -35,6 +36,6 @@ namespace Game
 			);
 		}
 
-		public Vector2 GetPosition()	=> _camera.ScreenToWorldPoint( _transform.position );
+		public Vector3 GetPosition()	=> _camera.ScreenToWorldPoint( _transform.position ).WithZ( 0 );
 	}
 }
