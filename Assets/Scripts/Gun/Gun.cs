@@ -5,6 +5,9 @@ namespace Game.Gun
 	[RequireComponent(typeof(Rigidbody2D), typeof(Collider2D))]
 	public sealed class Gun : MonoBehaviour
 	{
+		const float ThrowForce		= 400f;
+		const float TorqueForce		= 200f;
+		
 		[SerializeField] Bullet _bulletPrefab;
 		[SerializeField] Transform _muzzle;
 		
@@ -25,8 +28,8 @@ namespace Game.Gun
 			SetIsKinematic( false );
 			SetColliderIsActive( true );
 			
-			_rb.AddForce( Vector2.right * 2f, ForceMode2D.Impulse );	
-			_rb.AddTorque( 7f, ForceMode2D.Impulse);	
+			_rb.AddForce( Vector2.up * ThrowForce, ForceMode2D.Impulse );	
+			_rb.AddTorque( TorqueForce, ForceMode2D.Impulse);	
 		}
 
 		public void Attach(Transform parent)
@@ -59,9 +62,6 @@ namespace Game.Gun
 				: CollisionDetectionMode2D.Continuous;
 		}
 
-		void SetColliderIsActive(bool state)
-		{
-			_collider.enabled = state;
-		}
+		void SetColliderIsActive(bool state)	=> _collider.enabled = state;
 	}
 }

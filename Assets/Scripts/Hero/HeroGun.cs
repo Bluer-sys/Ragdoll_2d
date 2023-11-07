@@ -6,9 +6,10 @@ namespace Game.Hero
 
 	public sealed class HeroGun : MonoBehaviour
 	{
+		const int TakeGunDistance		= 5;
+		
 		[SerializeField] float			_gunRotationOffset;
 		[SerializeField] Transform		_rightArm;
-		[SerializeField] Transform		_leftArm;
 
 		Gun _current;
 		
@@ -33,7 +34,7 @@ namespace Game.Hero
 			{
 				Collider2D col = Physics2D.OverlapCircle( 
 					_rightArm.position, 
-					5, 
+					TakeGunDistance, 
 					LayerMask.GetMask( "Gun" ) 
 				);
 

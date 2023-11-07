@@ -549,7 +549,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gunRotationOffset: -70
   _rightArm: {fileID: 2623851657695709502}
-  _leftArm: {fileID: 1186301557849388440}
 --- !u!114 &1262190357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -563,7 +562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _shootInterval: 1.5
-  _heroGun: {fileID: 0}
+  _heroGun: {fileID: 1262190358}
   _handsIk:
   - {fileID: 879332568}
   - {fileID: 251805545}
@@ -2138,7 +2137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetRotation: 0
-  _force: 100
+  _force: 300
 --- !u!1 &6507928884740985584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2314,7 +2313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _targetRotation: 0
-  _force: 100
+  _force: 300
 --- !u!1 &7087545126378395307
 GameObject:
   m_ObjectHideFlags: 0

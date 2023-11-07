@@ -23,14 +23,11 @@ namespace Game.Hero
 		[SerializeField] List<HeroLimbIK>	_handsIk;
 		
 		float		_shotTimer;
-		
-		public EHeroState Current { get; private set; }
+		EHeroState	_current;
 
 		
 		void Start()
 		{
-			_heroGun = GetComponent<HeroGun>();
-			
 			Enter( EHeroState.Default );
 		}
 
@@ -50,7 +47,7 @@ namespace Game.Hero
 
 		void Update()
 		{
-			switch (Current)
+			switch (_current)
 			{
 				case EHeroState.Default:
 					
@@ -71,7 +68,7 @@ namespace Game.Hero
 
 		void OnEnter()
 		{
-			switch (Current)
+			switch (_current)
 			{
 				case EHeroState.Default:
 					ForAllHands( h => h.SetEnabled( false ) );
@@ -86,8 +83,8 @@ namespace Game.Hero
 
 		void OnAim()
 		{
-			bool isDefault			= Current == EHeroState.Default;
-			bool isAiming			= Current == EHeroState.Aiming;
+			bool isDefault			= _current == EHeroState.Default;
+			bool isAiming			= _current == EHeroState.Aiming;
 			bool hasGun				= _heroGun.HasGun();
 			
 			if( isDefault && hasGun )
@@ -99,7 +96,7 @@ namespace Game.Hero
 
 		void OnGrab()
 		{
-			bool isAiming			= Current == EHeroState.Aiming;
+			bool isAiming			= _current == EHeroState.Aiming;
 
 			if( isAiming )
 				Enter( EHeroState.Default );
@@ -107,11 +104,13 @@ namespace Game.Hero
 		
 		void Enter(EHeroState state)
 		{
-			if ( Current == state )
+			if ( _current == state )
 				throw new Exception($"Hero is already in {state} state");
 				
-			Current = state;
-			Debug.Log( $"State: {Current}" );
+			_current = state;
+			
+			Debug.Log( $"State Entered: {_current}" );
+			
 			OnEnter();
 		}
 
